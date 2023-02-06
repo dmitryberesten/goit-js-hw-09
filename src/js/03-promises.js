@@ -1,6 +1,7 @@
 import Notiflix from 'notiflix';
 
 // пошук елементів
+const form = document.querySelector('.form');
 const delay = document.querySelector('input[name="delay"]');
 const step = document.querySelector('input[name="step"]');
 const amount = document.querySelector('input[name="amount"]');
@@ -50,6 +51,8 @@ btnCreatePromise.addEventListener('click', e => {
         );
       });
   }
+
+  form.reset(); // очищення поля форми
 });
 
 // Діма Берестень

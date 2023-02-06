@@ -88,7 +88,7 @@ btnStart.addEventListener('click', () => {
       minutes.textContent = addLeadingZero(timeObject.minutes);
       seconds.textContent = addLeadingZero(timeObject.seconds);
 
-      // якщо зоротній відлік меньше-рвіне 10000
+      // якщо зоротній відлік меньше-рвіне 10 секунд
       if (countdown <= 10000) {
         timerHtml.style.color = 'red'; // зафарбувати текст в червоний
       }
